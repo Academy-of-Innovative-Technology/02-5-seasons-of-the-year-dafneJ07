@@ -3,10 +3,10 @@ var spring = document.querySelector(".row spring");
 var summer = document.querySelector(".row summer");
 var fall = document.querySelector(".row fall");
 
-var winterImages = document.querySelector(".row winter");
-var springImages = document.querySelector(".row spring");
-var summerImages = document.querySelector(".row summer");
-var fallImages = document.querySelector(".row fall");
+var winterImages = document.querySelector(".winter images");
+var springImages = document.querySelector(".spring images");
+var summerImages = document.querySelector(".summer images");
+var fallImages = document.querySelector(".fall images");
 
 
 

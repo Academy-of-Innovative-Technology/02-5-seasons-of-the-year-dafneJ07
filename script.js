@@ -1,79 +1,12 @@
-var winter = document.querySelector(".row winter");
-var spring = document.querySelector(".row spring");
-var summer = document.querySelector(".row summer");
-var fall = document.querySelector(".row fall");
+var spring = ["March", "April", "May"];
+var summer = ["June", "July", "August"];
+var fall = ["September", "October", "November"];
+var winter = ["December","Janaury", "February"];
 
-var winterImages = document.querySelector(".winter images");
-var springImages = document.querySelector(".spring images");
-var summerImages = document.querySelector(".summer images");
-var fallImages = document.querySelector(".fall images");
+var springImages = ["https://town-n-country-living.com/wp-content/uploads/2021/02/Spring-Garden-Tulips.jpeg"]
 
+var summerImages = ["https://bourbonandvinyl.net/wp-content/uploads/2023/07/806028-sea-summer-sky-beach.jpg"]
 
+var fallImages = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfM_6S5YvBgglSCgMYewWjBOd5C6PqxkwD-A&s"]
 
-
-
-
-
-const allSeasonsData = {
-    "Spring": {
-        months: spring,
-        images: springImages,
-        targetClass: ".spring"
-    },
-    "Summer": {
-        months: summer,
-        images: summerImages,
-        targetClass: ".summer"
-    },
-    "Fall": {
-        months: fall,
-        images: fallImages,
-        targetClass: ".fall"
-    },
-    "Winter": {
-        months: winter,
-        images: winterImages,
-        targetClass: ".winter"
-    }
-};
-
-
-function displayAllSeasons() {
-  
-    for (const seasonName in allSeasonsData) { 
-        if (Object.hasOwnProperty.call(allSeasonsData, seasonName)) {
-            const season = allSeasonsData;
-            let monthsHtml = '';
-
-
-         
-            for (let i = 0; i < season.months.length; i++) {
-                const month = season.months;
-                const image = season.images;
-
-
-               
-                monthsHtml += `
-                    <div class="col-md-4">
-                        <div class="month-card">
-                            <img src="${image}" alt="${month}">
-                            <div class="month-card-body">
-                                <p class="card-text">${month}</p>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-            
-            document.querySelector(season.targetClass).insertAdjacentHTML('beforeend', monthsHtml);
-        }
-    }
-}
-
-
-
-displayAllSeasons();
-
-
-
-
+var winterImages = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DAAYQDom6dVpaJ1FGMpb9QpsCjVQ8wG8Dw&s"]

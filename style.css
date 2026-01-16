@@ -1,63 +1,57 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
     height: 100%;
     width: 100%;
-    font-family: Arial, sans-serif;
 }
 
+* {
+    box-sizing: border-box; 
+}
+
+h3 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.row {
+    margin: 0;
+}
 
 .season-container {
     margin-bottom: 30px;
-    border: 1px solid #e0e0e0; 
-    background-color: #f8f8f8; 
-    padding: 20px;
-    border-radius: 8px;
 }
-
-
-.season-container h3 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
 
 .month-card {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 15px;
-    background-color: #fff; 
-}
+    padding: 8px;
 
+
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 25px;
+    background-color: #FAFAFA;
+}
 
 .month-card img {
     width: 100%;
-    height: 150px; 
+    height: 150px;
     object-fit: cover;
-    border-bottom: 1px solid #eee; 
 }
 
-
-.month-card-body {
+.month-body {
     padding: 15px;
     text-align: center;
-    font-size: 1.1em; 
-    color: #555;
 }
-
-
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; 
-    justify-content: center; 
-}
-
-
-.col-md-4 {
-    flex: 0 0 calc(33.333% - 10px); 
-    max-width: calc(33.333% - 10px);
-}
-
-
